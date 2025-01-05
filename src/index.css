@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* index.css or global.css */
+/* Reset default margins and padding for body and html */
+/* Reset margins and padding */
+/* Reset and Global Styles */
+/* Global Reset and Base Styling */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  height: 100%;
+  background: linear-gradient(135deg, #000000, #1a002b, #55006d, #ff0090);
+  background-size: 400% 400%; /* For smooth gradient animations */
+  animation: gradientMove 10s ease infinite;
+  overflow-x: hidden;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Root container */
+#root {
+  height: 100%;
+}
+
+/* Glassmorphism Styling for Cards */
+.task-card, .form-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.task-card:hover, .form-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0px 5px 20px rgba(255, 0, 144, 0.5);
+}
+
+/* Hover Effects for Buttons */
+button {
+  background: linear-gradient(90deg, #ff0090, #55006d);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(255, 0, 144, 0.6);
+}
+
+/* Glow Effect on Focus */
+input:focus, textarea:focus {
+  box-shadow: 0px 0px 10px rgba(255, 0, 144, 0.8);
+  border-color: rgba(255, 0, 144, 0.8);
+  color:#000000;
+}
+
+/* Typography Effects */
+h1, h2 {
+  text-shadow: 0px 4px 10px rgba(255, 0, 144, 0.5);
+  font-weight: bold;
+}
+
+/* Task List Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Center Content */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Remove list styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
