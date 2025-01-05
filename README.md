@@ -26,7 +26,7 @@ This is a responsive web application built with React.js (or Next.js) for managi
 
  2. Install dependencies:-
 
-cd Todo-List-Manager
+cd Todo-frontend
 npm install
 
 
